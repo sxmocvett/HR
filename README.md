@@ -1,34 +1,29 @@
-# <p align="center">Выявление потенциальных сотрудников компании среди обучающихся</p> 
+# <p align="center">HR analytics job change of data scientists</p> 
 
 <p align="center">
   <img src=https://img.golos.io/proxy/http://lk.aldmi.ru/wp-content/uploads/2016/04/Divider_03-1.png width="1000" height="100">
 </p>
 
-## Постановка проблемы
+## Problem formulation
 
-*<p align="justify">Компания хочет нанять специалистов по обработке данных среди людей, которые успешно проходят некоторые курсы, проводимые компанией. Многие люди записываются на их обучение. Компания хочет знать, кто из этих кандидатов действительно хочет работать в компании после обучения или будет искать другую работу. Все это позволяет сократить затраты и время на обучение или планирование курсов</p>*
+*<p align="justify">The company wants to hire data scientists from among the people who successfully complete some of the courses the company runs. Many people sign up for their training. The company wants to know which of these candidates really wants to work for the company after training or will be looking for another job. It let to reduce costs and time for training or course planning</p>*
 
-*Оригинал задания находится по [ссылке](https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists)*
+*The original assignment is at [link](https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists)*
 
-## Описание решения
+## Solution description
 
-### Постановка задачи
-
-*В рамках решения поставленной проблемы рассматривается задача бинарной классификации. Как видно из рисунка 1, классы целевой переменной являются несбалансированными*
+*To solve this problem a binary classification problem is considered. As seen in Figure 1, the target variable classes are unbalanced.*
 
 <p align="center">
-  <img src=pictures/target_balance.png?raw=true "Соотношение классов целевой переменной" width="400" height="600">
+  <img src=pictures/target_balance.png?raw=true "Target Class Balance" width="400" height="600">
 </p>
 
-<p align="center">Рис. 1  Соотношение классов целевой переменной</p> 
+<p align="center">Fig. 1 Target class balance</p> 
                 
-*<p align="justify">Также некоторые из признаков имеют от 0% до 40% пропущенных значений, это накладывает дополнительные условия при подготовке данных и настройке моделей</p>*
+*<p align="justify">Also some features have from 0% to 40% missing values, that imposes additional conditions to prepare data and tune models</p>*
 
-### Метрики
-*<p align="justify">В качестве метрики, на основе который происходит выбор наилучших параметров для каждой из моделей в условиях дизбаланса классов, выбрана <></p>*
+### Models
+*<p align="justify">Models are used in the project: CatBoostClassifier, RandomForestClassifier and VotingClassifier (based on LGBMClassifier, KNNClassifier and LogisticRegression). Taking into account the above-described issues, in addition to tuning the main hyperparameters of models, various combinations of imputation values and data recovery strategies are also considered. Automation of the parameters selection for these operations is achieved by GridSearchCV using ColumnTransformer and Pipeline constructors. </p>* 
 
-### Борьба с дизбалансом
-*<p align="justify">Для уравнивания соотношения классов целевой переменной используется технология SMOTE</p>*
-
-### Модели
-*<p align="justify">Исследуемыми моделями в проекте являются: CatBoostClassifier, RandomForestClassifier и VotingClassifier (на базе LGBMClassifier, KNNClassifier и LogisticRegression). С учетом вышеописанных особенностей помимо настройки основных гиперпараметров моделей также рассматриваются различные комбинации стратегий импутации и восстановления данных. Автоматизация подбора параметров для данных операций достигается при помощи GridSearchCV с использованием конструкторов ColumnTransformer и Pipeline</p>* 
+### Metrics
+*<p align="justify">Base metric for making choice of the best parameters for each of the models in conditions of class imbalance is <></p>*
