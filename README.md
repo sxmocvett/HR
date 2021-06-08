@@ -6,9 +6,12 @@
 
 ## Problem formulation
 
-*<p align="justify">The company wants to hire data scientists from among the people who successfully complete some of the courses the company runs. Many people sign up for their training. The company wants to know which of these candidates really wants to work for the company after training or will be looking for another job. It let to reduce costs and time for training or course planning</p>*
+*<p align="justify">The company wants to hire data scientists from among people who successfully complete some of the courses the company runs. Many people sign up for their training. The company wants to know which of these candidates really wants to work for the company after training or will be looking for another job. It let to reduce costs and time for training or course planning.</p>*
 
 *The original assignment is at [link](https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists)*
+
+## Dataset
+*<p align="justify">Dataset contains contains information about gender, city, experience and education of people, which they provide when registering for company courses.</p>*
 
 ## Solution description
 
@@ -20,10 +23,10 @@
 
 <p align="center">Fig. 1 Target class balance</p> 
                 
-*<p align="justify">Also some features have from 0% to 40% missing values, that imposes additional conditions to prepare data and tune models</p>*
+*<p align="justify">Also some features have from 0% to 40% missing values, that imposes additional conditions to prepare data and tune models.</p>*
 
 ### Models
-*<p align="justify">Models are used in the project: CatBoostClassifier, RandomForestClassifier and VotingClassifier (based on LGBMClassifier, KNNClassifier and LogisticRegression). Taking into account the above-described issues, in addition to tuning the main hyperparameters of models, various combinations of imputation values and data recovery strategies are also considered. Automation of the parameters selection for these operations is achieved by GridSearchCV using ColumnTransformer and Pipeline constructors. </p>* 
+*<p align="justify">Models are used in the project: CatBoostClassifier, RandomForestClassifier and VotingClassifier (based on LGBMClassifier, KNNClassifier and LogisticRegression). Taking into account the above-described issues, in addition to tuning the main hyperparameters of models, various combinations of imputation values and data recovery strategies are also considered. Automation of the parameters selection for these operations is achieved by GridSearchCV using ColumnTransformer and Pipeline constructors.</p>* 
 
 ### Metrics
-*<p align="justify">Base metric for making choice of the best parameters for each of the models in conditions of class imbalance is <></p>*
+*<p align="justify">Base metric for making choice of the best parameters for each of the models in conditions of class imbalance is <>.</p>*
