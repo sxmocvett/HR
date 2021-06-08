@@ -26,7 +26,7 @@ To solve this problem a binary classification problem is considered. As seen in 
 <p align="justify">Also some features have from 0% to 40% missing values (Figure 2), that imposes additional conditions to prepare data and tune models.</p>
 
 <p align="center">
-  <img src=pictures/miss.PNG?raw=true "% Missing values">
+  <img src=pictures/missing_values.PNG?raw=true "% Missing values">
 </p> 
 
 *<p align="center">Fig. 2 Missing values (%) </p>*
