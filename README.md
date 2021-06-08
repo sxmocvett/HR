@@ -21,7 +21,7 @@
   <img src=pictures/target_balance.png?raw=true "Target Class Balance" width="400" height="600">
 </p>
 
-<p align="center">Fig. 1 Target class balance</p> 
+<p align="center">Fig. 1 Target class balance (A – Not looking for job change, B – Looking for a job change)</p> 
                 
 *<p align="justify">Also some features have from 0% to 40% missing values, that imposes additional conditions to prepare data and tune models.</p>*
 
