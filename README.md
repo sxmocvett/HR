@@ -1,7 +1,7 @@
 # <p align="center">HR analytics job change of data scientists</p> 
 
 <p align="center">
-  <img src=https://img.golos.io/proxy/http://lk.aldmi.ru/wp-content/uploads/2016/04/Divider_03-1.png width="1000" height="100">
+  <img src=https://img.golos.io/proxy/http://lk.aldmi.ru/wp-content/uploads/2016/04/Divider_03-1.png width="600" height="80">
 </p>
 
 ## Problem formulation
