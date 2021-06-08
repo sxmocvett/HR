@@ -29,9 +29,9 @@
 *<p align="justify">Models are used in the project: CatBoostClassifier, RandomForestClassifier and VotingClassifier (based on LGBMClassifier, KNNClassifier and LogisticRegression). Taking into account the above-described issues, in addition to tuning the main hyperparameters of models, various combinations of imputation values and data recovery strategies are also considered. Automation of the parameters selection for these operations is achieved by GridSearchCV using ColumnTransformer and Pipeline constructors.</p>* 
 
 ### Metrics
-*<p align="justify">Base metric for making choice of the best parameters for each of the models in conditions of class imbalance is "balanced accuracy score". The following metrics are also used for the final comparison of models (figure 3).</p>*
+*<p align="justify">Base metric for making choice of the best parameters for each of the models in conditions of class imbalance is "balanced accuracy score". The following metrics are also used for the final comparison of models (Figure 2).</p>*
 
 <p align="center">
-  <img src=pictures/metrics.png?raw=true "Metrics" width="400" height="600">
+  <img src=pictures/metrics.png?raw=true "Metrics" width="200" height="200">
 </p>
 <p align="center">Fig. 2 Сomparative metrics </p> 
